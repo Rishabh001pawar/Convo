@@ -5,7 +5,7 @@ import moment from 'moment'
 import StoryModal from './StoryModal'
 import StoryViewer from './StoryViewer'
 import { useAuth } from '@clerk/clerk-react'
-// import api from '../api/axios'
+import api from '../api/axios'
 import toast from 'react-hot-toast'
 
 const StoriesBar = () => {
@@ -31,7 +31,6 @@ const StoriesBar = () => {
         } catch (error) {
             toast.error(error.message)
         }
-        // setStories(dummyStoriesData);
     }
 
     useEffect(()=>{
